@@ -7,14 +7,14 @@ import 'package:ugks_limousine_app/presentation/pages/home_page.dart';
 
 import '../../size_config.dart';
 
-class PaymentPage extends StatefulWidget {
-  const PaymentPage({Key? key}) : super(key: key);
+class PaymentContinuePage extends StatefulWidget {
+  const PaymentContinuePage({Key? key}) : super(key: key);
 
   @override
-  State<PaymentPage> createState() => _PaymentPageState();
+  State<PaymentContinuePage> createState() => _PaymentContinuePageState();
 }
 
-class _PaymentPageState extends State<PaymentPage> {
+class _PaymentContinuePageState extends State<PaymentContinuePage> {
   bool switchButton = false;
 
   @override
@@ -127,6 +127,40 @@ class _PaymentPageState extends State<PaymentPage> {
                       color: Color(0xFFF24A40),
                       fontSize: getProportionateScreenWidth(14),
                     ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Spacer(),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomePage(),
+                ),
+              );
+            },
+            child: Container(
+              height: getProportionateScreenHeight(58),
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(20)),
+              color: Color(0xFFF24A40),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    "Continue",
+                    style: TextStyle(
+                      fontSize: getProportionateScreenWidth(22),
+                      color: Colors.white,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.white,
                   ),
                 ],
               ),
