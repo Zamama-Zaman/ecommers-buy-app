@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:ugks_limousine_app/presentation/pages/account_page.dart';
+import 'package:ugks_limousine_app/presentation/pages/help_page.dart';
 import 'package:ugks_limousine_app/presentation/pages/home_page.dart';
+import 'package:ugks_limousine_app/presentation/pages/rider_page.dart';
 
 class DefaultPage extends StatefulWidget {
   const DefaultPage({Key? key}) : super(key: key);
@@ -34,9 +37,9 @@ class _DefaultPageState extends State<DefaultPage> {
 
   final _screens = <Widget>[
     HomePage(),
-    Center(child: Text("RIDE")),
-    Center(child: Text("HELP")),
-    Center(child: Text("ACCOUNT")),
+    RiderPage(),
+    HelpPage(),
+    AccountPage(),
   ];
 
   int _pageNavIndex = 0;

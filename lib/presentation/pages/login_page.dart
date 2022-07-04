@@ -3,12 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:ugks_limousine_app/presentation/pages/default_page.dart';
 
+import '../../size_config.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    SizeConfig().init(context);
     return Scaffold(
       backgroundColor: Color(0xFF201B19),
       body: Padding(
