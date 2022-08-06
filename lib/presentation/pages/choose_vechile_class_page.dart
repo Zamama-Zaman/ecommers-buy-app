@@ -183,7 +183,7 @@ class ChooseVechileClassPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: getProportionateScreenHeight(20)),
+              SizedBox(height: getProportionateScreenHeight(30)),
               GestureDetector(
                 onTap: () {
                   Navigator.push(

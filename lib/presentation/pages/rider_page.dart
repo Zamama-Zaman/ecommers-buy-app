@@ -34,7 +34,7 @@ class _RiderPageState extends State<RiderPage>
       child: Text(
         "Upcomming",
         style: TextStyle(
-          fontSize: getProportionateScreenWidth(15),
+          fontSize: getProportionateScreenWidth(14),
         ),
       ),
     ),
